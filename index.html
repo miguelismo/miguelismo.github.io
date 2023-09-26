@@ -60,15 +60,29 @@
         window.addEventListener('resize', resize);
 
         //para compu
-        /*
+        
         document.addEventListener('mousemove', draw);
         document.addEventListener('mousedown', setPosition);
         document.addEventListener('mouseenter', setPosition);
-        */
+        
 
         //para telefono
+        /*
         document.addEventListener('touchmove', draw);
         document.addEventListener('touchstart', setPosition);
+        */
+
+        //otros eventos
+          /*
+        canvas.addEventListener('mousedown', handleWritingStart);
+        canvas.addEventListener('mousemove', handleWritingInProgress);
+        canvas.addEventListener('mouseup', handleDrawingEnd);
+        canvas.addEventListener('mouseout', handleDrawingEnd);
+
+        canvas.addEventListener('touchstart', handleWritingStart);
+        canvas.addEventListener('touchmove', handleWritingInProgress);
+        canvas.addEventListener('touchend', handleDrawingEnd);
+          */
         
         // new position from mouse event
         function setPosition(e) {
